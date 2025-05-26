@@ -40,3 +40,14 @@ document.getElementById('reservation-modal').addEventListener('click', function(
         this.style.display = 'none';
     }
 });
+document.getElementById('giftTrigger').addEventListener('click', function() {
+  const aboutSection = document.getElementById('aboutDev');
+  
+  // Affiche/masque la section
+  if (aboutSection.style.display === 'none') {
+    aboutSection.style.display = 'block';
+    this.style.display = 'none'; // Cache le cadeau après clic
+  } else {
+    aboutSection.style.display = 'none';
+  }
+});

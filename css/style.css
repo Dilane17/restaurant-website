@@ -1,4 +1,6 @@
-
+@media (max-width: 400px) {
+  .navbar-brand { font-size: 1.2rem; }
+}
 :root {
     --main-color: #b48a78;
     --main-color-dark: #a06c54;
@@ -51,7 +53,55 @@ body {
     font-size: 1.5rem;
     color: rgba(207, 189, 189, 0.904);
 }
-        /* --- MENU SECTION --- */
+
+/* Animation du cadeau */
+.gift-box {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.gift-body {
+  width: 100%;
+  height: 60px;
+  background: #FFD700; /* Or */
+  border-radius: 5px;
+}
+
+.gift-lid {
+  width: 110%;
+  height: 20px;
+  background: #800020; /* Rouge bordeaux */
+  position: absolute;
+  top: -10px;
+  left: -5%;
+  border-radius: 5px 5px 0 0;
+}
+
+.gift-container p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Effet au survol */
+.gift-box:hover .gift-lid {
+  transform: translateY(-5px) rotate(5deg);
+  transition: all 0.3s ease;
+}
+
+/* Animation quand la section apparaît */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about-dev {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* --- MENU SECTION --- */
 #menu {
     background: var(--section-bg);
     padding-top: 60px;
