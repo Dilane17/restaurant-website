@@ -228,6 +228,9 @@ body {
 #contact .btn-primary:hover {
     background-color: var(--primary-dark);
 }
+#contact .form-label {
+    color: var(--dark-bg);
+}
 
 /* =========================
    TÉMOIGNAGES
